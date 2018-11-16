@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/harry-reporter/precache-manifest.d52df2519d820c78b7f803e67a56b5ac.js"
+  "/harry-reporter/precache-manifest.b247f7b120b86d3d363261ba01eb5f13.js"
 );
 
 workbox.clientsClaim();
