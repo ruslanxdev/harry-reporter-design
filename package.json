@@ -1,0 +1,36 @@
+{
+  "name": "harry-reporter",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@githubprimer/octicons-react": "^8.1.2",
+    "@primer/components": "^6.0.1-beta",
+    "install": "^0.12.2",
+    "node-sass": "^4.10.0",
+    "npm": "^6.4.1",
+    "primer": "^10.9.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "homepage": "https://ruslankhh.com/harry-reporter"
+}
