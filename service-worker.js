@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/harry-reporter/precache-manifest.b3fff948d7d99ecc1b55df369a2f9b01.js"
+  "/harry-reporter-design/precache-manifest.60dba2798c1b88f418d14acbd9c1424c.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/harry-reporter/index.html", {
+workbox.routing.registerNavigationRoute("/harry-reporter-design/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

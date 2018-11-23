@@ -1,15 +1,15 @@
 {
-  "main.css": "/harry-reporter/static/css/main.5f7c393c.chunk.css",
-  "main.js": "/harry-reporter/static/js/main.0839b54a.chunk.js",
-  "main.js.map": "/harry-reporter/static/js/main.0839b54a.chunk.js.map",
-  "static/css/1.81f1ec70.chunk.css": "/harry-reporter/static/css/1.81f1ec70.chunk.css",
-  "static/js/1.1517c81d.chunk.js": "/harry-reporter/static/js/1.1517c81d.chunk.js",
-  "static/js/1.1517c81d.chunk.js.map": "/harry-reporter/static/js/1.1517c81d.chunk.js.map",
-  "runtime~main.js": "/harry-reporter/static/js/runtime~main.8341c54a.js",
-  "runtime~main.js.map": "/harry-reporter/static/js/runtime~main.8341c54a.js.map",
-  "static/css/1.81f1ec70.chunk.css.map": "/harry-reporter/static/css/1.81f1ec70.chunk.css.map",
-  "static/css/main.5f7c393c.chunk.css.map": "/harry-reporter/static/css/main.5f7c393c.chunk.css.map",
-  "index.html": "/harry-reporter/index.html",
-  "precache-manifest.b3fff948d7d99ecc1b55df369a2f9b01.js": "/harry-reporter/precache-manifest.b3fff948d7d99ecc1b55df369a2f9b01.js",
-  "service-worker.js": "/harry-reporter/service-worker.js"
+  "main.css": "/harry-reporter-design/static/css/main.5f7c393c.chunk.css",
+  "main.js": "/harry-reporter-design/static/js/main.04816f08.chunk.js",
+  "main.js.map": "/harry-reporter-design/static/js/main.04816f08.chunk.js.map",
+  "static/css/1.81f1ec70.chunk.css": "/harry-reporter-design/static/css/1.81f1ec70.chunk.css",
+  "static/js/1.1517c81d.chunk.js": "/harry-reporter-design/static/js/1.1517c81d.chunk.js",
+  "static/js/1.1517c81d.chunk.js.map": "/harry-reporter-design/static/js/1.1517c81d.chunk.js.map",
+  "runtime~main.js": "/harry-reporter-design/static/js/runtime~main.24b7aa36.js",
+  "runtime~main.js.map": "/harry-reporter-design/static/js/runtime~main.24b7aa36.js.map",
+  "static/css/1.81f1ec70.chunk.css.map": "/harry-reporter-design/static/css/1.81f1ec70.chunk.css.map",
+  "static/css/main.5f7c393c.chunk.css.map": "/harry-reporter-design/static/css/main.5f7c393c.chunk.css.map",
+  "index.html": "/harry-reporter-design/index.html",
+  "precache-manifest.60dba2798c1b88f418d14acbd9c1424c.js": "/harry-reporter-design/precache-manifest.60dba2798c1b88f418d14acbd9c1424c.js",
+  "service-worker.js": "/harry-reporter-design/service-worker.js"
 }
