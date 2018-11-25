@@ -6,6 +6,7 @@ export default {
         {
           status: 'fail',
           title: 'chrome-desktop',
+          tab: 2,
           error: {
             message: 'AssertionError: не сработал счетчик',
             stack: [
@@ -14,16 +15,9 @@ export default {
               'at <anonymous>',
               'at process._tickDomainCallback (internal/process/next_tick.js:228:7)',
               'at assertCountersd - checkCounter2.js:47:20'
-            ]
-          },
-          asserts: [
-            {
-              status: 'fail',
-              images: {
-                actual: 'assets/images/3/chrome-desktop_current_7.png',
-              }
-            }
-          ]
+            ],
+            image: 'assets/images/3/chrome-desktop_current_7.png'
+          }
         }
       ]
     },
@@ -33,6 +27,7 @@ export default {
         {
           status: 'fail',
           title: 'chrome-desktop',
+          tab: 2,
           asserts: [
             {
               status: 'fail',
@@ -48,15 +43,59 @@ export default {
       ]
     },
     {
+      title:'Расширенный поиск Проверка фильтров Проверка выпадающего списка кнопки "Еще"',
+      checks: [
+        {
+          status: 'fail',
+          title: 'edge-desktop',
+          tab: 2,
+          asserts: [
+            {
+              status: 'fail',
+              title: 'lang-popup',
+              images: {
+                expected: 'assets/images/1/edge-desktop_ref_7.png',
+                actual: 'assets/images/1/edge-desktop_current_7.png',
+                diff: 'assets/images/1/edge-desktop_diff_7.png'
+              }
+            },
+            {
+              status: 'success',
+              title: 'lang-popup2'
+            }
+          ]
+        }
+      ]
+    },
+    {
       title: 'Расширенный поиск Проверка фильтров Проверка выпадающего списка кнопки "Еще"',
-      tab: 0,
-      meta: {
-        platform: 'desktop',
-        url: '/search/?text=metallica',
-        file: 'features/desktop/advanced-search/advanced-search.hermione.js',
-        sessionId: 'sddsfs231'
-      },
-      code: `it('Расширенный поиск Проверка фильтров Проверка выпадающего списка кнопки "Еще"', function() {
+      checks: [
+        {
+          status: 'fail',
+          title: 'edge-desktop',
+          tab: 0,
+          asserts: [
+            {
+              status: 'fail',
+              title: 'lang-popup',
+              images: {
+                expected: 'assets/images/1/edge-desktop_ref_7.png',
+                actual: 'assets/images/1/edge-desktop_current_7.png',
+                diff: 'assets/images/1/edge-desktop_diff_7.png'
+              }
+            },
+            {
+              status: 'success',
+              title: 'lang-popup2'
+            }
+          ],
+          meta: {
+            platform: 'desktop',
+            url: '/search/?text=metallica',
+            file: 'features/desktop/advanced-search/advanced-search.hermione.js',
+            sessionId: 'sddsfs231'
+          },
+          code: `it('Расширенный поиск Проверка фильтров Проверка выпадающего списка кнопки "Еще"', function() {
     const PO = this.PO;
 
     return this.browser
@@ -85,54 +124,16 @@ export default {
         .shouldBeVisible(PO.advancedSearchLangPopup.firstItemChecked())
         .shouldBeVisible(PO.advancedSearchLangPopup.lastItemChecked());
 });`
+        }
+      ]
     },
     {
       title: 'Расширенный поиск Проверка фильтров Проверка выпадающего списка кнопки "Еще"',
-      tab: 1,
-      meta: {
-        platform: 'desktop',
-        url: '/search/?text=metallica',
-        file: 'features/desktop/advanced-search/advanced-search.hermione.js',
-        sessionId: 'sddsfs231'
-      },
-      description: {
-        steps: [
-          'do: получить выдачу по запросу "metallica"',
-          'assert: получена выдача по указанному запросу',
-          'do: нажать на иконку "Расширенного поиска"',
-          'assert: открылась форма расширенного поиска',
-          'assert: по умолчанию ни один фильтр не выбран',
-          'do: кликнуть по кнопке "Еще"',
-          'assert: появился выпадающий список с языками',
-          'assert: внешний вид соответствует скриншоту',
-          'do: нажать кнопку "Вверх" на клавиатуре',
-          'assert: последний элемент выпадающего списка выделен',
-          'do: нажать кнопку "Enter" на клавиатуре',
-          'assert: выдача перезагрузилась аяксом',
-          'assert: последний элемент выпадающего списка выделен и выбран',
-          'assert: внешний вид соответствует скриншоту',
-          'do: навести курсор мыши на первый элемент выпадающего списка',
-          'assert: первый элемент выпадающего списка выделен',
-          'do: кликнуть в первый элемент выпадающего списка',
-          'assert: выдача перезагрузилась аяксом',
-          'assert: выпадающий список открыт',
-          'assert: первый элемент выпадающего списка выделен',
-          'assert: первый и последний элементы выпадающего списка выбраны',
-          'do: обновить страницу',
-          'assert: страница обновилась',
-          'do: кликнуть по кнопке "Еще"',
-          'assert: выпадающий список открыт',
-          'assert: первый элемент выпадающего списка выделен',
-          'assert: первый и последний элементы выпадающего списка выбраны',
-        ]
-      }
-    },
-    {
-      title:'Расширенный поиск Проверка фильтров Проверка выпадающего списка кнопки "Еще"',
       checks: [
         {
           status: 'fail',
           title: 'edge-desktop',
+          tab: 1,
           asserts: [
             {
               status: 'fail',
@@ -147,9 +148,63 @@ export default {
               status: 'success',
               title: 'lang-popup2'
             }
-          ]
+          ],
+          meta: {
+            platform: 'desktop',
+            url: '/search/?text=metallica',
+            file: 'features/desktop/advanced-search/advanced-search.hermione.js',
+            sessionId: 'sddsfs231'
+          },
+          description: {
+            steps: [
+              'do: получить выдачу по запросу "metallica"',
+              'assert: получена выдача по указанному запросу',
+              'do: нажать на иконку "Расширенного поиска"',
+              'assert: открылась форма расширенного поиска',
+              'assert: по умолчанию ни один фильтр не выбран',
+              'do: кликнуть по кнопке "Еще"',
+              'assert: появился выпадающий список с языками',
+              'assert: внешний вид соответствует скриншоту',
+              'do: нажать кнопку "Вверх" на клавиатуре',
+              'assert: последний элемент выпадающего списка выделен',
+              'do: нажать кнопку "Enter" на клавиатуре',
+              'assert: выдача перезагрузилась аяксом',
+              'assert: последний элемент выпадающего списка выделен и выбран',
+              'assert: внешний вид соответствует скриншоту',
+              'do: навести курсор мыши на первый элемент выпадающего списка',
+              'assert: первый элемент выпадающего списка выделен',
+              'do: кликнуть в первый элемент выпадающего списка',
+              'assert: выдача перезагрузилась аяксом',
+              'assert: выпадающий список открыт',
+              'assert: первый элемент выпадающего списка выделен',
+              'assert: первый и последний элементы выпадающего списка выбраны',
+              'do: обновить страницу',
+              'assert: страница обновилась',
+              'do: кликнуть по кнопке "Еще"',
+              'assert: выпадающий список открыт',
+              'assert: первый элемент выпадающего списка выделен',
+              'assert: первый и последний элементы выпадающего списка выбраны',
+            ]
+          }
         }
       ]
-    }
+    },
+    {
+      title:'Расширенный поиск Проверка фильтров Проверка выпадающего списка кнопки "Еще"',
+      checks: [
+        {
+          status: 'success',
+          title: 'chrome-desktop'
+        },
+        {
+          status: 'success',
+          title: 'firefox'
+        },
+        {
+          status: 'success',
+          title: 'ie11'
+        }
+      ]
+    },
   ]
 }
